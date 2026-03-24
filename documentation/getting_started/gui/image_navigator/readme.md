@@ -1,7 +1,7 @@
 <h2 id="image_navigator"> Image Navigator </h2>
 
 <i>Image Navigator</i> tool uses <i>Sliders</i> and <i>Spinboxes</i> to set the scan slice for each sagittal, coronal and axial planes.
-Changing the principal planes scan slice changes the changes the location of the crosshairs in the 2D views and vice versa.
+Changing the principal planes scan slice changes the location of the crosshairs in the 2D views and vice versa.
 
 <figure>
   <img class="svImg svImgSm"  src="/documentation/getting_started/gui/images/image-navigator.png"> 
@@ -47,7 +47,7 @@ Changing the principal planes scan slice changes the changes the location of the
 
   <tr>
     <td><img src="/documentation/getting_started/gui/images/image-navigator-time.png" width="245" height="22"> </td>
-    <td> Changes the time step for time-resolved image data. </td>
+    <td> Changes the time step for time-resolved image data </td>
   </tr>
 </table>
 

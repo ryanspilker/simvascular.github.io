@@ -1,7 +1,7 @@
 <h2 id="intro_tools"> Tools </h2>
 
 The SimVascular application provides a set of core <i>Tools</i> (aka plugins) implementing methods for each step in the
-SimVascular image-based modeling pipeline. The follow lists each core <i>Tool</i> type and primary function
+SimVascular image-based modeling pipeline. The core <i>Tools</i> and their primary functions are as follows.
 
 <ol>
   <li> <b>Paths</b> - Interactively creates paths based on image data 

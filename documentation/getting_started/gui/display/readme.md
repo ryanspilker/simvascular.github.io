@@ -27,7 +27,7 @@ structures defined as
 
 <h3 id="navigation"> Navigation </h3>
 
-The principal planes slice is represented by a pair of crosshairs the 2D view windows. Selecting a point with the left
+The principal plane slices are represented by pairs of crosshairs in each of the 2D view windows. Selecting a point with the left
 mouse button in a 2D view centers the crosshair on that point. Pressing the right mouse button and moving the mouse zooms
 in and out. Scrolling the mouse wheel changes the principal plane slice for which the mouse cursor is in.
 
@@ -45,7 +45,7 @@ The function of the mouse buttons depends on the window the mouse cursor is in.
 
   <tr>
     <td> Left </td>
-    <td> Moves the crosshairs, select image points and pixel values </td>
+    <td> Moves the crosshairs, selects image points and pixel values </td>
   </tr>
 
   <tr>
@@ -116,7 +116,7 @@ corner each window provides options to customize the view and crosshair behavior
         <li> <b> Coupled crosshair rotation </b> - Select to toggle using crosshairs to rotate planes both planes </li>
         <li> <b> Swivel mode </b> - Select to toggle using crosshairs to rotate planes in about all three axes </li>
         <li> <img src="/documentation/getting_started/gui/images/window-ts-slider.png" width="140" height="30"> 
-             - The <b>T</b>thicker <b>S</b>slices slider controls how many slices around the current one are used for a maximum intensity projection </li>
+             - The <b>T</b>hicker <b>S</b>lices slider controls how many slices around the current one are used for a maximum intensity projection </li>
       </ul>
     </td>
 
