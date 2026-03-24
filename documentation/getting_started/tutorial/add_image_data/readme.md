@@ -16,7 +16,7 @@ Image data is added to the <i>Project</i> using the <i>Data Manager</i> <i>Image
          Select the <b>Add/Replace image</b> menu option. 
          <br><br>
          <div style="background-color: #F0F0F0; padding: 10px; border: 1px solid #e6e600; border-left: 6px solid #e6e600"> 
-         Only one image may be displayed in SimVascular. Adding another image will overwrite the current image. 
+         Only one image series may be displayed in SimVascular. Adding another image will overwrite the current image. 
          </div>
     </td> 
   </tr>
@@ -27,7 +27,7 @@ Image data is added to the <i>Project</i> using the <i>Data Manager</i> <i>Image
          <br><br>
          Press the <b>Open</b> <i>Button</i>. 
          <br><br>
-         The series of DICOM files are read in. <br><br>
+         The series of DICOM files is read in. <br><br>
     </td> 
   </tr>
 
@@ -59,7 +59,7 @@ Image data is added to the <i>Project</i> using the <i>Data Manager</i> <i>Image
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/add-image-6.png" width="512" height="360"> </td>
-    <td> Enter <b>aorta</b> for the image name in the <b>Image Name:</b> <i>TextBox</i> <br><br>
+    <td> Enter <b>aorta</b> for the image name in the <b>Image name:</b> <i>TextBox</i>. <br><br>
          Press the <b>OK</b> <i>Button</i>.
     </td> 
   </tr>
@@ -67,8 +67,8 @@ Image data is added to the <i>Project</i> using the <i>Data Manager</i> <i>Image
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/add-image-7.png" width="512" height="360"> </td>
     <td> The image is displayed in the standard four-window view layout. <br><br>
-         Press the <img src="/documentation/getting_started/gui/images/gui-save-icon.png" width="40" height="35"> 
-         icon in the  <i>ToolBar</i> to save the <i>Project</i>. <br><br>
+         <!-- Press the <img src="/documentation/getting_started/gui/images/gui-save-icon.png" width="40" height="35"> 
+         icon in the  <i>ToolBar</i> to save the <i>Project</i>. <br><br> -->
          The image volume is saved as a VTK VTI file named <b>aorta.vti</b> in the <i>Project's</i> <i>Images</i> directory.
     </td> 
   </tr>
