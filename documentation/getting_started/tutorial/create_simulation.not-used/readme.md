@@ -50,13 +50,13 @@ in the main aorta and iliac vessels.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-simulation-2.png" width="512" height="360"> <br><br>
     </td>
-    <td> A <b>Create Simulation Job</b> <i>DiaglogBox</i> appears. 
+    <td> A <b>Create Simulation Job</b> <i>DialogBox</i> appears. 
          <br><br>
          The <b>Select Model:</b> <i>ComboBox</i> is used to select a model. Leave it on <b>aorta-iliacs</b>.
          <br><br>
          Enter <b>aorta-iliacs</b> in the <b>Job Name:</b> <i>TextBox</i>.
          <br><br>
-         Press the <b>Create Simulation Job</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. 
+         Press the <b>Create Simulation Job</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. 
          <br><br>
          <div style="background-color: #F0F0F0; padding: 10px; border: 1px solid #d0d0d0; border-left: 6px solid #d0d0d0">
          A solid model is first selected for the simulation because it identifies the <i>Faces</i> used to define boundary
@@ -133,7 +133,7 @@ The left and right iliac outlets are set to a resistance boundary condition with
          <br><br>
          Select the <b>steady.flow</b> file from the <b>Tutorial/flow-files</b> directory. 
          <br><br>
-         Press the <b><b>Set Inlet/Outlet BCs</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. 
+         Press the <b><b>Set Inlet/Outlet BCs</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. 
     </td>
   </tr>
 
@@ -154,7 +154,7 @@ The left and right iliac outlets are set to a resistance boundary condition with
         <br><br>
         Enter <b>16000</b> into the <b>Resistance:</b> <i>TextBox</i>
         <br><br>
-        Press the <b>Set Inlet/Outlet BCs</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. 
+        Press the <b>Set Inlet/Outlet BCs</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. 
     </td>
   </tr>
 
@@ -175,7 +175,7 @@ The left and right iliac outlets are set to a resistance boundary condition with
         <br><br>
         Enter <b>16000</b> into the <b>Resistance:</b> <i>TextBox</i>
         <br><br>
-        Press the <b>Set Inlet/Outlet BCs</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>.   
+        Press the <b>Set Inlet/Outlet BCs</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>.   
     </td>
   </tr>
 

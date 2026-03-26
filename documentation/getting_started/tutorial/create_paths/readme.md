@@ -152,11 +152,11 @@ aortic bifurcation to the end of the left iliac artery.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-path-10.png" width="512" height="360"> <br><br>
     </td>
-    <td> A <b>Create New Path</b> <i>DiaglogBox</i> appears. <br><br>
+    <td> A <b>Create New Path</b> <i>DialogBox</i> appears. <br><br>
          Enter <b>left-iliac</b> for the <i>Path</i> name in the <b>Path Name:</b> <i>TextBox</i>. <br><br>
          From the <b>Subdivision type</b> <i>ComboBox</i> select <b>Spacing Based</b>. <br><br>
          An <i>Information Popup</i> appears; press the <b>OK</b> <i>Button</i>. <br><br>
-         Press the <b>Create New Path</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. <br><br>
+         Press the <b>Create New Path</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. <br><br>
     </td>
   </tr>
 

@@ -7,8 +7,8 @@ underlying governing fluid equations and simulate physical effects. The mesh qua
 and speed of the simulation process.
 
 <div style="background-color: #F0F0F0; padding: 10px; border: 1px solid #d0d0d0; border-left: 6px solid #d0d0d0">
-<i>Modeling</i> and <i>Meshing</i> are typically the most time consuming steps in the image-based modeling pipeline.
-It often takes multiple iterations between the <i>Modeling</i> and <i>Meshes Tools</i> to obtain a model that can
+<i>Modeling</i> and <i>Meshing</i> are typically the most time-consuming steps in the image-based modeling pipeline.
+It often takes multiple iterations between the <i>Models</i> and <i>Meshes Tools</i> to obtain a model that can
 be successfully meshed and suitable for a CFD simulation.
 </div>
 
@@ -39,7 +39,7 @@ Create an instance of a <i>Meshes Tool</i> named <b>aorta-iliacs</b> used to cre
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-mesh-2.png" width="512" height="360"> <br><br>
     </td>
-    <td> A <b>Create Mesh</b> <i>DiaglogBox</i> appears. 
+    <td> A <b>Create Mesh</b> <i>DialogBox</i> appears. 
          <br><br>
          The <b>Select Model:</b> <i>ComboBox</i> is used to select a model. Leave it on <b>aorta-iliacs</b>.
          <br><br>
@@ -48,7 +48,7 @@ Create an instance of a <i>Meshes Tool</i> named <b>aorta-iliacs</b> used to cre
          Don't enter anything in the <i>Mesh Name:</i> <i>TextBox</i>; by default it will use the <b>aorta-iliacs</b> model 
          name for the mesh.
          <br><br>
-         Press the <b>Create Mesh</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. <br><br>
+         Press the <b>Create Mesh</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. <br><br>
          <br><br>
     </td>
   </tr>
@@ -113,7 +113,7 @@ The section demonstrates how to generate a finite element mesh from the <b>aorta
 </table>
 
 <div style="background-color: #F0F0F0; padding: 10px; border: 1px solid #e6e600; border-left: 6px solid #e6e600">
-When opening a <i>Project</i> SimVascular does not automatically read in and display <i>Meshes Tool</i> meshes.
+When opening a <i>Project</i>, SimVascular does not automatically read in and display <i>Meshes Tool</i> meshes.
 A mesh must be manually loaded by right clicking on a <i>Data Manager</i> Meshes Data Node</i> and selecting the
 <b>Load/Unload Volume Mesh</b> menu option.
 </div>
