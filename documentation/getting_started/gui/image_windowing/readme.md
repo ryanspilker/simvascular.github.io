@@ -11,7 +11,7 @@ A blue region in the <i>Image Windowing</i> tool shows then <i>window center</i>
 
 <figure>
   <img class="svImg svImgXs"  src="/documentation/getting_started/gui/images/image-window-level-tool.png">
-  <figcaption class="svCaption"> The <b>Image Windowing</b> tool. The <b>window width</b> and <b>window center</b> is 
+  <figcaption class="svCaption"> The <b>Image Windowing</b> tool. The <b>window width</b> and <b>window center</b> are 
       represented using a blue region within the tool. The two text boxes at the bottom of the tool show the 
       <b>window center</b> (upper box) and the <b>window width</b> (lower box).
   </figcaption>

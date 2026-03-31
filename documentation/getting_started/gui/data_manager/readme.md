@@ -30,12 +30,12 @@ created following the steps demonstrated in the <a href="#tutorial"> Tutorial</a
   </figcaption>
 </figure>
 
-The <i> Data Manager </i> hierarchy shown in Fig 7. indicates that the following <i>Tool</i> instances are defined for the
+The <i> Data Manager </i> hierarchy shown in Fig. 7 indicates that the following <i>Tool</i> instances are defined for the
 <i>Project</i> as one or more <i>Data Nodes</i>
 
 <ul style="list-style-type:none;">
   <li> <b>Images</b> - A single <i>Tool</i> instance named <b>sample_data-cm</b>
-  <li> <b>Paths</b> - Two <i>Tool</i> instances named <b>aorta</b> and <b>right_iliac</b>.
+  <li> <b>Paths</b> - Two <i>Tool</i> instances named <b>aorta</b> and <b>right_iliac</b>
   <li> <b>Segmentations</b> - Two <i>Tool</i> instances named <b>aorta</b> and <b>right_iliac</b>
   <li> <b>Models</b> - A single <i>Tool</i> instance named <b>demo</b>
   <li> <b>Meshes</b> - A single <i>Tool</i> named <b>demomesh</b>
@@ -45,8 +45,8 @@ The <i> Data Manager </i> hierarchy shown in Fig 7. indicates that the following
 
 <h3 id="data_manager_interaction"> Interacting with the Data Manager </h3>
 
-Interaction with the <i> Data Manager </i> is performed using the mouse. The resulting action depends on if a
-<i>Tool Type</i> or a <i>Data Nodes</i> is selected. The mouse buttons have the following functions
+Interaction with the <i> Data Manager </i> is performed using the mouse. The resulting action depends on whether a
+<i>Tool Type</i> or a <i>Data Node</i> is selected. The mouse buttons have the following functions
 
 <table class="table table-bordered" style="width:100%">
   <caption> <b> Data Manager mouse button function </b> </caption>
@@ -119,7 +119,7 @@ The <i> Data Manager </i> has two GUI controls that are selected with the left m
 
 The <i> Data Manager </i> menus used to manage <i>Tools</i> are opened using the right mouse button. Selecting a <i>Tool Type</i>
 opens a menu containing options common to all <i>Tool Types</i> and additional options specialized for a particular <i>Tool Type</i>.
-Specialized options are located at the bottom of a menu and are separated from the common options by a line (Fig 8.).
+Specialized options are located at the bottom of a menu and are separated from the common options by a line (Fig. 8).
 
 <figure>
   <img class="svImg svImgLg"  src="/documentation/getting_started/gui/images/data-manager-type-menu.png"> 
@@ -159,7 +159,7 @@ Specialized options are located at the bottom of a menu and are separated from t
 
   <tr>
     <td> Toggle visibility </td>
-    <td> Show ( or hide) the selected <i>Data Nodes</i> in the <i>Display</i> if they are hidden (or visible) </td>
+    <td> Show (or hide) the selected <i>Data Nodes</i> in the <i>Display</i> if they are hidden (or visible) </td>
   </tr>
 
   <tr>

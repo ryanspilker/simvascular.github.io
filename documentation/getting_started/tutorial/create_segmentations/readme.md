@@ -7,8 +7,8 @@ SimVascular supports several methods used to manually define lumen boundaries. T
 when image contrast is poor and lumen boundaries are not well defined by variations in image intensity.
 
 <ul style="list-style-type:none;">
-  <li> <b>Circle</b> - Interactively select a center and radius, or input radius, to define a circle. </li>
-  <li> <b>Ellipse</b> - Interactively select a center and two axis, or axes radii, to define an ellipse. </li>
+  <li> <b>Circle</b> - Interactively select a center and radius to define a circle, or input a radius. </li>
+  <li> <b>Ellipse</b> - Interactively select a center and two vertices to define an ellipse, or input a width and height. </li>
   <li> <b>Polygon</b> - Interactively select a set of points defining a polygon. </li>
   <li> <b>SplinePoly</b> - Interactively select a set of points defining an interpolating smooth curve (spline). </li>
 </ul>
@@ -21,7 +21,8 @@ values.
   <li> <b>Threshold</b> - Use an image intensity value to define a boundary. </li>
 </ul>
 
-Paths created by <i>Paths Tools</i> are used to extract a series of 2D image slices from the image volume.
+<i>Paths</i> created by <i>Paths Tools</i> are used to extract a series of 2D image slices perpendicular to the <i>Paths</i>
+from the image volume.
 Segmentation is then performed on each slice to extract a lumen boundary. Image points and intensity values used
 for segmentation are interactively selected from a 2D image using the <b>left mouse button</b>.
 
@@ -34,7 +35,7 @@ A detailed discussion about segmentation can be found in the SimVascular
 <h3 id="tutorial_create_segs_1"> Create an instance of a <i>Segmentations Tool</i> for the aorta/right iliac </h3>
 
 Create an instance of a <i>Segmentations Tool</i> named <b>aorta</b> used to define a <i>Contour Group</i>
-for the main aorta and right iliac vessels.
+for the abdominal aorta and right iliac artery.
 
 <table class="table table-bordered" style="width:100%">
   <caption> Create a <i>Segmentations Tool</i> instance named <b>aorta</b> </caption>
@@ -53,10 +54,10 @@ for the main aorta and right iliac vessels.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-seg-2.png" width="512" height="360"> <br><br>
     </td>
-    <td> A <b>Create Contour Group</b> <i>DiaglogBox</i> appears. <br><br>
-         Select <b>aorta</b> for the <i>Path</i> name from the <b>Select Path:</b> <i>ComboBox</i> <br><br>
-         Enter <b>aorta</b> for the <i>Contour Group</i> name in the <b>Group Name:</b> <i>TextBox</i> <br><br>
-         Press the <b>Create Contour Group</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. <br><br>
+    <td> A <b>Create Contour Group</b> <i>DialogBox</i> appears. <br><br>
+         Select <b>aorta</b> for the <i>Path</i> name from the <b>Select Path:</b> <i>ComboBox</i>. <br><br>
+         Enter <b>aorta</b> for the <i>Contour Group</i> name in the <b>Group Name:</b> <i>TextBox</i>. <br><br>
+         Press the <b>Create Contour Group</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. <br><br>
     </td>
   </tr>
 
@@ -71,7 +72,7 @@ for the main aorta and right iliac vessels.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-seg-4.png" width="512" height="360"> </td>
     <td> Close the <i>SV Path Planning Panel</i> by selected the <b>X</b> in its <i>Tab</i>. <br><br>
-         Double-click on the <i>Data Manager</i> <b>Segmentations / aorta</b> <i>Data Node</i> with the left mouse button to bring up the <i>SV 2D Segmentation Panel</i>. The <i>Display</i> layout is changed to two 2D views on the left and one 3D view on the right. <br><br>
+         Double-click on the <i>Data Manager</i> <b>Segmentations / aorta</b> <i>Data Node</i> with the left mouse button to bring up the <i>SV 2D Segmentation Panel</i>. The <i>Display</i> layout is changed to three 2D views on the left and one 3D view on the right. <br><br>
          The 3D view displays geometry from any <i>Tool</i> that is selected to be visible using the
          <img src="/documentation/getting_started/tutorial/images/visible-toggle-box.png" width="20" height="18"> control.
          The <b>aorta</b> and <b>left-iliac</b> paths are shown as yellow lines with blue markers.<br><br>
@@ -123,7 +124,7 @@ for the main aorta and right iliac vessels.
 <br>
 <h3 id="tutorial_create_segs_2"> Create segmentations for the aorta/right iliac </h3>
 
-This section demonstrates how to create a set of segmentations from the start of the aorta to the end of the right iliac arteries
+This section demonstrates how to create a set of segmentations from the start of the aorta to the end of the right iliac artery
 using the <i>Level Set</i> segmentation method.
 
 <table class="table table-bordered" style="width:100%">
@@ -135,7 +136,7 @@ using the <i>Level Set</i> segmentation method.
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-aorta-seg-1.png" width="512" height="360"> </td>
-    <td> In the <i>Segmentations</i> <i>Tool</i> <i>Panel</i> select the 
+    <td> In the <i>Segmentations</i> <i>Tool</i> <i>Panel</i>, select the 
          <img src="/documentation/getting_started/tutorial/images/seg-gui-levelset.png" width="50" height="18"> <i>Button</i>. 
          <br> <br>
          The <b>LevelSet</b> sub-panel is displayed containing GUI controls used to set parameters controlling the
@@ -154,7 +155,7 @@ using the <i>Level Set</i> segmentation method.
          surrounding tissue.
          <br><br>
          The contour is added to the <b>Contour List</b> <i>Table</i> as <b>0:SplinePolygon,LevelSet</b>, where <i>0</i> is
-         the contour ID, <i>SplinePolygon</i> is geometric representation and <i>LevelSet</i> the segmentation method.
+         the contour ID, <i>SplinePolygon</i> the geometric representation, and <i>LevelSet</i> the segmentation method.
     </td>
   </tr>
 
@@ -166,7 +167,7 @@ using the <i>Level Set</i> segmentation method.
          The blue and yellow markers in the center of the contour represent the location of a point on a path from 
          which the 2D image is extracted. 
          <br><br>
-         The 10 green markers represent the control points use to control the shape of the interpolating spline. Moving
+         The 10 green markers represent the control points used to control the shape of the interpolating spline. Moving
          a control point alters the shape of the level set contour. The number of control points is changed using the 
          <b>Ctrl. No.</b> <i>TextBox</i>. 
          <br><br>
@@ -203,7 +204,7 @@ using the <i>Level Set</i> segmentation method.
     <td><img src="/documentation/getting_started/tutorial/images/create-aorta-seg-6.png" width="512" height="360"> </td>
     <td> The surface passing through the contours is visualized by selecting the <b>Lofting Preview</b> <i>CheckBox</i>.
          <br><br>
-         This is the surface that will eventually be used to create a solid model so any surface features that would 
+         This is the surface that will eventually be used to create a solid model, so any surface features that would 
          lead to a poor model (e.g. overlapping regions) should be identified and fixed.
     </td>
   </tr>
@@ -232,10 +233,10 @@ for the aorta/right iliac bifurcation to the end of the left iliac artery.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-seg-7.png" width="512" height="360"> <br><br>
     </td>
-    <td> A <b>Create Contour Group</b> <i>DiaglogBox</i> appears. <br><br>
-         Select <b>left-iliac</b> for the <i>Path</i> name from the <b>Select Path:</b> <i>ComboBox</i> <br><br>
-         Enter <b>left-iliac</b> for the <i>Contour Group</i> name in the <b>Group Name:</b> <i>TextBox</i> <br><br>
-         Press the <b>Create Contour Group</b> <i>DiaglogBox</i> <b>OK</b> <i>Button</i>. <br><br>
+    <td> A <b>Create Contour Group</b> <i>DialogBox</i> appears. <br><br>
+         Select <b>left-iliac</b> for the <i>Path</i> name from the <b>Select Path:</b> <i>ComboBox</i>. <br><br>
+         Enter <b>left-iliac</b> for the <i>Contour Group</i> name in the <b>Group Name:</b> <i>TextBox</i>. <br><br>
+         Press the <b>Create Contour Group</b> <i>DialogBox</i> <b>OK</b> <i>Button</i>. <br><br>
     </td>
   </tr>
 
@@ -250,7 +251,7 @@ for the aorta/right iliac bifurcation to the end of the left iliac artery.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-seg-9.png" width="512" height="360"> </td>
     <td> Double-click on the <i>Data Manager</i> <b>Segmentations / left-iliac</b> <i>Data Node</i> with the left mouse
-         button to bring up the <i>SV 2D Segmentation Panel</i>. The <i>Display</i> layout is changed to two 2D views
+         button to bring up the <i>SV 2D Segmentation Panel</i>. The <i>Display</i> layout is changed to three 2D views
          on the left and one 3D view on the right. <br><br>
          The red rectangular region
          <img src="/documentation/getting_started/tutorial/images/create-seg-5.png" width="32" height="21">
@@ -279,7 +280,7 @@ using the <i>Level Set</i> segmentation method.
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-left-iliac-seg-1.png" width="512" height="360"> </td>
-    <td> In the <i>Segmentations</i> <i>Tool</i> <i>Panel</i> select the
+    <td> In the <i>Segmentations</i> <i>Tool</i> <i>Panel</i>, select the
          <img src="/documentation/getting_started/tutorial/images/seg-gui-levelset.png" width="50" height="18"> <i>Button</i>.
          <br> <br>
          The <b>LevelSet</b> sub-panel is displayed containing GUI controls used to set parameters controlling the
@@ -291,7 +292,7 @@ using the <i>Level Set</i> segmentation method.
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-left-iliac-seg-2.png" width="512" height="360"> </td>
-    <td> Segmentations for the entire left iliac are created by moving the 2D slice plane to a new position along
+    <td> Segmentations for the entire left iliac artery are created by moving the 2D slice plane to a new position along
          the <b>left-iliac</b> <i>Path</i> using the <b>Reslice</b> <i>Slider</i> and selecting the
          <img src="/documentation/getting_started/tutorial/images/seg-gui-levelset.png" width="50" height="18"> <i>Button</i>.
          <br><br>
@@ -304,7 +305,7 @@ using the <i>Level Set</i> segmentation method.
     <td><img src="/documentation/getting_started/tutorial/images/create-left-iliac-seg-3.png" width="512" height="360"> </td>
     <td> The surface passing through the contours is visualized by selecting the <b>Lofting Preview</b> <i>CheckBox</i>.
          <br><br>
-         This is the surface that will eventually be used to create a solid model so any surface features that would
+         This is the surface that will eventually be used to create a solid model, so any surface features that would
          lead to a poor model (e.g. overlapping regions) should be identified and fixed.
     </td>
   </tr>
@@ -312,10 +313,10 @@ using the <i>Level Set</i> segmentation method.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-left-iliac-seg-4.png" width="512" height="360"> </td>
     <td> Select the <b>Lofted</b> box under the <i>Data Manager</i> <b>Segmentations / aorta</b> <i>Data Node</i>
-         to visualize both the </b>aorta</b> and <b>left-iliac</b> lofted surfaces.
+         to visualize both the <b>aorta</b> and <b>left-iliac</b> lofted surfaces.
          <br><br>
          The upper left 2D <i>Axial</i> view displays the intersection of the 2D slice plane with the two surfaces as white lines. 
-         This shows that the <b>left-iliac</b> surface does not completely fit in the </b>aorta</b>. This could later cause problems 
+         This shows that the <b>left-iliac</b> surface does not completely fit in the <b>aorta</b>. This could later cause problems 
          when creating a model or generating a finite element mesh.
     </td>
   </tr>
@@ -323,7 +324,7 @@ using the <i>Level Set</i> segmentation method.
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-left-iliac-seg-5.png" width="512" height="360"> </td>
     <td> Select the outer control point of the <b>Contour Manipulator</b> to reduce the size of the first contour until
-         it completely fits in the </b>aorta</b>.
+         it completely fits in the <b>aorta</b>.
          <br><br>
          Press the <img src="/documentation/getting_started/gui/images/gui-save-icon.png" width="40" height="35">
          icon in the  <i>ToolBar</i> to save the <i>Project</i>. <br><br>
