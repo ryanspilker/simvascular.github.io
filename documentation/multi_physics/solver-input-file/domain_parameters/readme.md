@@ -17,7 +17,7 @@ The <i>Domain Subsection</i> is organized as follows
 <br>
 &lt;<strong>Viscosity</strong>&gt;
 <br><br>
-&lt;<strong>Stimulus</strong> type=<i>stimulus_type</i>&gt;<br>
+&lt;<strong>Stimulus</strong> type=<i>stimulus_type</i>&gt; <i>(repeatable)</i><br>
 [<a href="#domain_Stimulus_subsection"> Stimulus Subsection </a> ]
 <br>
 &lt;<strong>Stimulus</strong>&gt;
@@ -405,6 +405,10 @@ The <i>Stimulus Subsection</i> is organized as follows
 <br>
 [<a href="#stimulus_parameters"> Stimulus Parameters </a> ]
 <br><br>
+&lt;<strong>Spatial_bounds</strong>&gt;<br>
+[<a href="#stimulus_Spatial_bounds_subsection"> Spatial Bounds Subsection </a> ]<br>
+&lt;<strong>/Spatial_bounds</strong>&gt;
+<br><br>
 &lt;<strong>/Stimulus</strong>&gt;
 </div>
 
@@ -415,17 +419,24 @@ The <strong>Stimulus</strong> keyword adds stimulus settings to the enclosing do
   <li> "Istim" - the applied stimulus is a source current and not a voltage source </li>
 </ul>
 
+Multiple <strong>&lt;Stimulus&gt;</strong> elements may be placed within the same explicit
+<strong>&lt;Domain&gt;</strong> subsection, or under the equation-level default domain when no
+explicit domain subsection is used. Each stimulus is evaluated independently using its own
+amplitude, timing parameters, and optional spatial bounds. When multiple stimuli are active at
+the same node and time, their amplitudes are summed. Defining no <strong>&lt;Stimulus&gt;</strong>
+elements produces no applied stimulus; defining one applies only that stimulus.
+
 <h5 id="stimulus_parameters"> Parameters </h5>
 <div class="bc_param_div">
 <strong>&lt;Amplitude&gt;</strong> <i>real</i> [0.0] <nobr>
 <strong>&lt;/Amplitude&gt;</strong>
 </nobr><br>
-The stimulus amplitude.
+The stimulus amplitude. An omitted or zero-valued amplitude contributes no stimulus.
 <br>
-<strong>&lt;Cycle_length&gt;</strong> <i>real</i> [0.0] <nobr>
+<strong>&lt;Cycle_length&gt;</strong> <i>real</i> [total simulation duration] <nobr>
 <strong>&lt;/Cycle_length&gt;</strong>
 </nobr><br>
-The stimulus cycle length. 
+The stimulus cycle length. When omitted, the total simulation duration is used. For a stimulus with a nonzero amplitude, the cycle length must be greater than zero.
 <br>
 <strong>&lt;Duration&gt;</strong> <i>real</i> [0.0] <nobr>
 <strong>&lt;/Duration&gt;</strong>
@@ -436,5 +447,58 @@ The stimulus duration.
 <strong>&lt;/Start_time&gt;</strong>
 </nobr><br>
 The stimulus start time.
+<br>
+</div>
+
+<!-- -------------------------------------------------- -->
+<!-- ---------- Spatial Bounds Subsection ------------- -->
+<!-- -------------------------------------------------- -->
+
+<h5 id="stimulus_Spatial_bounds_subsection"> Spatial Bounds Subsection </h5>
+The optional <i>Spatial Bounds Subsection</i> restricts the stimulus to nodes that lie within
+one or more geometric regions. When omitted the stimulus is applied to all nodes in the domain.
+
+The <i>Spatial Bounds Subsection</i> is organized as follows
+<div style="background-color: #F0F0F0; padding: 10px; border: 1px solid #d0d0d0; border-left: 1px solid #d0d0d0">
+&lt;<strong>Spatial_bounds</strong>&gt;<br>
+<br>
+&lt;<strong>Box</strong>&gt;<br>
+[<a href="#stimulus_Box_parameters"> Box Parameters </a> ]<br>
+&lt;<strong>/Box</strong>&gt;
+<br><br>
+&lt;<strong>Sphere</strong>&gt;<br>
+[<a href="#stimulus_Sphere_parameters"> Sphere Parameters </a> ]<br>
+&lt;<strong>/Sphere</strong>&gt;
+<br><br>
+&lt;<strong>/Spatial_bounds</strong>&gt;
+</div>
+
+Specifying both a Box and Sphere subsections restricts nodes to the intersection of those geometric regions.
+
+<h6 id="stimulus_Box_parameters"> Box Parameters </h6>
+<div class="bc_param_div">
+<strong>&lt;Minimum&gt;</strong> <i>vector</i> <nobr>
+<strong>&lt;/Minimum&gt;</strong>
+</nobr><br>
+The minimum point of the bounding box. One coordinate value per spatial dimension.
+<br>
+<strong>&lt;Maximum&gt;</strong> <i>vector</i> <nobr>
+<strong>&lt;/Maximum&gt;</strong>
+</nobr><br>
+The maximum point of the bounding box. Must have the same number of coordinates as <strong>Minimum</strong>.
+<br>
+</div>
+
+<h6 id="stimulus_Sphere_parameters"> Sphere Parameters </h6>
+<div class="bc_param_div">
+<strong>&lt;Center&gt;</strong> <i>vector</i> <nobr>
+<strong>&lt;/Center&gt;</strong>
+</nobr><br>
+The center of the sphere. One coordinate value per spatial dimension.
+<br>
+<strong>&lt;Radius&gt;</strong> <i>real</i> <nobr>
+<strong>&lt;/Radius&gt;</strong>
+</nobr><br>
+The radius of the sphere. Must be non-negative.
 <br>
 </div>
