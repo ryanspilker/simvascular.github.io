@@ -577,21 +577,6 @@ zero-md {
     padding-top: 15px;
 }
 
-.tocCategoryHeading {
-    grid-column: 1 / -1;
-    margin: 14px 0 0;
-    padding: 0 0 7px;
-    border-bottom: 2px solid var(--verydarkblue);
-    color: var(--verydarkblue);
-    font-size: 20px;
-    line-height: 1.3;
-    text-transform: none;
-}
-
-.tocCategoryHeading:first-child {
-    margin-top: 0;
-}
-
 .tocPageSummary {
     padding: 18px;
     min-height: 100%;
