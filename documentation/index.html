@@ -135,10 +135,7 @@
         <h3>Documentation</h3>
       </div>
       <div>
-        <h4 class="skipTo start-here">Start Here</h4>
-      </div>
-      <div>
-        <h4 class="skipTo first-project">First Project</h4>
+        <h4 class="skipTo first-project">Complete a first SimVascular project</h4>
       </div>
       <div>
         <h4 class="skipTo documentation-pages">Documentation Pages</h4>
@@ -153,8 +150,8 @@
         <div class="tocLead">
           <h1>SimVascular Documentation</h1>
           <p>
-            Find tutorials, guides including geometric modeling and simulation for clinical applications,
-            explanations of underlying theory, and information for technical reference.
+            Use this documentation table of contents to learn SimVascular, create cardiovascular models,
+            prepare and run simulations, review clinical examples, and find technical details.
           </p>
         </div>
         <aside class="tocRecommendation">
@@ -166,7 +163,7 @@
 
       <section id="first-project" class="tocSection tocBand">
         <div class="tocSectionHeading">
-          <h2>First Steps</h2>
+          <h2>Complete a first SimVascular project</h2>
           <p>Use this sequence to become familiar with the software and complete a first cardiovascular geometric model and simulation.</p>
         </div>
         <ol class="tocSteps">
@@ -197,44 +194,49 @@
       <section id="documentation-pages" class="tocSection">
         <div class="tocSectionHeading">
           <h2>Documentation Pages</h2>
-          <p>Select a page for its complete instructions, background, and technical details.</p>
+          <p>Continue with the documentation that matches your task. The sections below follow the main workflow from introductory material and model creation through simulation, advanced methods, and technical reference.</p>
         </div>
         <div class="tocPageGrid">
+          <h3 class="tocCategoryHeading">Introductory Materials</h3>
           <article class="tocPageSummary">
             <h3><a href="getting_started.html">Getting Started</a></h3>
-            <p>Installation, graphical interface orientation, project concepts, and a complete first-model tutorial</p>
+            <p>Install SimVascular, learn how projects and the graphical interface work, and construct a first cardiovascular model</p>
           </article>
+          <h3 class="tocCategoryHeading">Building Anatomic Models</h3>
           <article class="tocPageSummary">
             <h3><a href="meshing.html">Meshing</a></h3>
-            <p>TetGen meshing, boundary layers, local refinement, adaptive meshing, export, and inspection</p>
+            <p>Generate and inspect finite element meshes, control local refinement, and add boundary layers for simulation</p>
           </article>
           <article class="tocPageSummary">
             <h3><a href="modeling.html">Modeling</a></h3>
-            <p>Vessel path planning, image segmentation, contour management, and geometric model construction</p>
-          </article>
-          <article class="tocPageSummary">
-            <h3><a href="cfd_simulation.html">CFD Simulation</a></h3>
-            <p>Simulation inputs, boundary conditions, and the CFD Simulation Tool panels</p>
-          </article>
-          <article class="tocPageSummary">
-            <h3><a href="multi_physics.html">svMultiPhysics</a></h3>
-            <p>Solver overview, theory, input files, data formats, simulations, GUI tool, and user and developer guides</p>
-          </article>
-          <article class="tocPageSummary">
-            <h3><a href="rom_simulation.html">ROM Simulation</a></h3>
-            <p>Reduced-order modeling with the ROM tool, 1D and 0D solvers, input formats, calibration, and visualization</p>
+            <p>Create vessel paths and lumen segmentations from image data, then construct a three-dimensional vascular model</p>
           </article>
           <article class="tocPageSummary">
             <h3><a href="simcardio.html">SimCardio</a></h3>
-            <p>Cardiac image segmentation, mesh generation, electrophysiology, Purkinje networks, and cardiac mechanics</p>
+            <p>Create cardiac models and prepare electrophysiology, Purkinje network, and cardiac mechanics simulations</p>
           </article>
+          <h3 class="tocCategoryHeading">Simulation Setup and 3D Solvers</h3>
           <article class="tocPageSummary">
-            <h3><a href="python_interface.html">Python Interface</a></h3>
-            <p>Python console, shell, projects, help, error handling, and SimVascular Python modules</p>
+            <h3><a href="cfd_simulation.html">CFD Simulation</a></h3>
+            <p>Assign boundary conditions, generate solver input files, run blood-flow simulations, and review results</p>
           </article>
           <article class="tocPageSummary">
             <h3><a href="genbc.html">General Boundary Conditions</a></h3>
-            <p>Preparing SimVascular files, setting up GenBC, compiling, running, and pressure waveform inlet conditions</p>
+            <p>Define custom boundary-condition behavior, prepare required files, compile the model, and run it with a simulation</p>
+          </article>
+          <article class="tocPageSummary">
+            <h3><a href="multi_physics.html">svMultiPhysics</a></h3>
+            <p>Configure and run three-dimensional multiphysics simulations, understand solver inputs and data formats, and consult theory and developer guidance</p>
+          </article>
+          <h3 class="tocCategoryHeading">Reduced Order Models</h3>
+          <article class="tocPageSummary">
+            <h3><a href="rom_simulation.html">ROM Simulation</a></h3>
+            <p>Create and run computationally efficient 0D and 1D models, calibrate parameters, and visualize reduced-order results</p>
+          </article>
+          <h3 class="tocCategoryHeading">Programming and Technical Reference</h3>
+          <article class="tocPageSummary">
+            <h3><a href="python_interface.html">Python Interface</a></h3>
+            <p>Automate SimVascular tasks and work programmatically with projects, geometry, modeling, segmentation, and meshing</p>
           </article>
           <article class="tocPageSummary">
             <h3><a href="references.html">References</a></h3>
