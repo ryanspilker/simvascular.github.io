@@ -143,7 +143,7 @@ leaving through each outlet, this resistance produces a mean pressure near the p
     <td><img src="/documentation/getting_started/tutorial/images/create-simulation-10.png" width="512" style="max-width:100%; height:auto"></td>
     <td>Confirm that <b>cap_aorta_2</b> is assigned <b>Resistance</b> and that both outlet values are <b>2000</b>.
         <br><br>
-        Save the project.
+        Save the <i>Project</i>.
     </td>
   </tr>
 </table>
@@ -213,7 +213,7 @@ Common <b>mpiexec</b> locations include <b>/opt/homebrew/bin/mpiexec</b> on macO
         <br><br>
         Click <b>Create Data Files for Simulation</b>.
         <br><br>
-        When the information dialog reports that the files were created, click <b>OK</b> and save the project.
+        When the information dialog reports that the files were created, click <b>OK</b>, and save the <i>Project</i>.
         <br><br>
         Click <b>Run Simulation</b>. The run may take several minutes.
         <br><br>
@@ -223,7 +223,7 @@ Common <b>mpiexec</b> locations include <b>/opt/homebrew/bin/mpiexec</b> on macO
 </table>
 
 <br>
-<h3 id="tutorial_create_simulation_5">Inspect the result in ParaView</h3>
+<h3 id="tutorial_create_simulation_5">Inspect the results in ParaView</h3>
 
 The solver writes result files to a run directory inside the simulation job directory. In
 <a href="https://www.paraview.org/">ParaView</a>, open that directory, select the grouped <b>result_..vtu</b> files, and

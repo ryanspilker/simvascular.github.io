@@ -1,6 +1,6 @@
 <h1 id="tutorial"> Tutorial </h1>
 
-This section demonstrates how to use the SimVascular image-based modeling pipeline to create a patient-specific geometric model of the human vasculature. A finite element mesh is then created from that model that can later be used for a computational fluid dynamics (CFD) simulation of blood flow for that model. A model of an aorta with left and right iliac arteries is created from an MR image volume.
+This section demonstrates how to use the SimVascular image-based modeling pipeline to create a patient-specific geometric model of the human vasculature. A finite element mesh is then created from the model and used for a computational fluid dynamics (CFD) simulation of blood flow. A model of an aorta with left and right iliac arteries is created from an MR image volume.
 
 <!-- The following lists the sections in this tutorial
 
@@ -8,7 +8,7 @@ This section demonstrates how to use the SimVascular image-based modeling pipeli
 
   <li> <a href="#tutorial_starting_simvascular">Starting SimVascular</a>
 
-  <li> <a href="#tutorial_create_project">Create a Project</a>
+  <li> <a href="#tutorial_create_project">Create Project</a>
 
   <li> <a href="#tutorial_add_image_data">Add Image Data</a>
 
@@ -46,12 +46,11 @@ This section demonstrates how to use the SimVascular image-based modeling pipeli
       <li> <a href="#tutorial_create_simulation_2">Set inlet and outlet boundary conditions</a>
       <li> <a href="#tutorial_create_simulation_3">Confirm wall properties and set solver parameters</a>
       <li> <a href="#tutorial_create_simulation_4">Create the input files and run the simulation</a>
-      <li> <a href="#tutorial_create_simulation_5">Inspect the result in ParaView</a>
+      <li> <a href="#tutorial_create_simulation_5">Inspect the results in ParaView</a>
     </ol>
 
 </ol> -->
 
-<br>
 The <a href="https://simtk.org/frs/download_confirm.php/file/7094/New%20Tutorial%20Project.zip?group_id=930"> SimVascular Tutorial Project </a>
 is a complete SimVascular project containing the data created by each of these steps. It also includes an <i>OSMSC0110-aorta</i> directory
 containing DICOM image data used in the tutorial.
