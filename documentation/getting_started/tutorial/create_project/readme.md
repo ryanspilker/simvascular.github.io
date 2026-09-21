@@ -13,7 +13,7 @@ when creating the <i>Project</i>.
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-proj-1.png" width="512" height="360"> </td>
-    <td> Select the <i>MenuBar<i> <b>File</b> / <b>Create SV Project</b> option. </td> 
+    <td> Select the <i>MenuBar</i> <b>File</b> / <b>Create SV Project</b> option. </td>
   </tr>
 
   <tr>

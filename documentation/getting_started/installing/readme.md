@@ -50,11 +50,16 @@ by running the following command in a terminal
     xcode-select --install 
 </pre>
 
-The latest versions of SimVascular now require that the <a href="https://www.openmp.org/"> OpenMP </a> library be installed for shared-memory multiprocessing. It can be installed using
+The latest versions of SimVascular require the <a href="https://www.openmp.org/"> OpenMP </a> library for shared-memory
+multiprocessing. Running an <i>svMultiPhysics</i> simulation from the SimVascular application also requires
+<a href="https://www.open-mpi.org/"> OpenMPI </a>. If <a href="https://brew.sh/">Homebrew</a> is installed, both can be installed using
 
 <pre>
-    brew install libomp 
+    brew install libomp open-mpi
 </pre>
+
+Homebrew typically installs <b>mpiexec</b> at <b>/opt/homebrew/bin/mpiexec</b>. The CFD simulation portion of this
+tutorial describes how to select the executable in SimVascular.
 
 If SimVascular fails at start-up then running it from the command-line will show a message explaining which library can't be found. You can then install the missing library using
 

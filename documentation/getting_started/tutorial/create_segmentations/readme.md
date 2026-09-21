@@ -71,7 +71,7 @@ for the abdominal aorta and right iliac artery.
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-seg-4.png" width="512" height="360"> </td>
-    <td> Close the <i>SV Path Planning Panel</i> by selected the <b>X</b> in its <i>Tab</i>. <br><br>
+    <td> Close the <i>SV Path Planning Panel</i> by selecting the <b>&times;</b> on its tab. <br><br>
          Double-click on the <i>Data Manager</i> <b>Segmentations / aorta</b> <i>Data Node</i> with the left mouse button to bring up the <i>SV 2D Segmentation Panel</i>. The <i>Display</i> layout is changed to three 2D views on the left and one 3D view on the right. <br><br>
          The 3D view displays geometry from any <i>Tool</i> that is selected to be visible using the
          <img src="/documentation/getting_started/tutorial/images/visible-toggle-box.png" width="20" height="18"> control.

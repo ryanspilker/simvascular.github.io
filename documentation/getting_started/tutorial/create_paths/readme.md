@@ -41,8 +41,8 @@ and right iliac artery.
   <tr>
     <td> <img src="/documentation/getting_started/tutorial/images/create-path-3.png" width="512" height="360">
     </td>
-    <td> A <i>Data Node</i> named <b>aorta</b> (an instance of a <i>Paths<i> <i>Tool</i>) is created under the
-         <i>Data Manager</i> <i>Paths<i> <i>Tool Type</i>.
+    <td> A <i>Data Node</i> named <b>aorta</b> (an instance of a <i>Paths</i> <i>Tool</i>) is created under the
+         <i>Data Manager</i> <i>Paths</i> <i>Tool Type</i>.
     </td>
   </tr>
 
@@ -67,7 +67,7 @@ and right iliac artery.
 </table>
 
 <br>
-<h3 id="tutorial_create_paths_2"> Create the aorta/right iliac <i>Path</i> </i> </h3>
+<h3 id="tutorial_create_paths_2"> Create the aorta/right iliac <i>Path</i> </h3>
 
 This section demonstrates how to create a set of points representing a <i>Path</i> from the proximal descending aorta to the
 end of the right iliac artery. Path points are added interactively by positioning crosshairs in the three 2D
@@ -163,8 +163,8 @@ aortic bifurcation to the end of the left iliac artery.
   <tr>
     <td> <img src="/documentation/getting_started/tutorial/images/create-path-11.png" width="512" height="360">
     </td>
-    <td> A <i>Data Node</i> named <b>left-iliac</b> (an instance of a <i>Paths<i> <i>Tool</i>) is created under the
-         <i>Data Manager</i> <i>Paths<i> <i>Tool Type</i>.
+    <td> A <i>Data Node</i> named <b>left-iliac</b> (an instance of a <i>Paths</i> <i>Tool</i>) is created under the
+         <i>Data Manager</i> <i>Paths</i> <i>Tool Type</i>.
     </td>
   </tr>
 

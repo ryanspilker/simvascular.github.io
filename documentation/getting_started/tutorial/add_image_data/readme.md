@@ -11,7 +11,7 @@ Image data is added to the <i>Project</i> using the <i>Data Manager</i> <i>Image
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/add-image-1.png" width="512" height="360"> </td>
-    <td> Select the <i>Images<i> <i>Tool</i> in the <i>Data Manager</i> with the right mouse button. 
+    <td> Select the <i>Images</i> <i>Tool</i> in the <i>Data Manager</i> with the right mouse button.
          <br><br>
          Select the <b>Add/Replace image</b> menu option. 
          <br><br>

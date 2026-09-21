@@ -36,22 +36,22 @@ This section demonstrates how to use the SimVascular image-based modeling pipeli
 
   <li> <a href="#tutorial_create_finite_element_mesh">Create Finite Element Mesh</a>
     <ol type="i">
-      <li> <a href="#tutorial_create_mesh_1">Create an instance of a <i>Meshes Tool</i> for the <b>aorta-iliacs</b> model.</a>
-      <li> <a href="#tutorial_create_mesh_2"> Generate a finite element mesh from the <b>aorta-iliacs</b> model.</a>
+      <li> <a href="#tutorial_create_mesh_1">Create an instance of a <i>Meshes Tool</i> for the <b>aorta-iliacs</b> model</a>
+      <li> <a href="#tutorial_create_mesh_2"> Generate a finite element mesh from the <b>aorta-iliacs</b> model</a>
     </ol>
 
   <li> <a href="#tutorial_create_simulation">Create CFD Simulation</a>
     <ol type="i">
-      <li> <a href="#tutorial_create_simulation_1"> Create an instance of a <i>Simulations Tool</i> for the <b>aorta-iliacs</b> model.</a>
-      <li> <a href="#tutorial_create_simulation_2"> Set inlet and outlet boundary conditions.</a>
-      <li> <a href="#tutorial_create_simulation_3"> Set solver parameters. </a>
-      <li> <a href="#tutorial_create_simulation_4"> Run the simulation. </a>
-      <li> <a href="#tutorial_create_simulation_5"> Convert simulation results. </a>
+      <li> <a href="#tutorial_create_simulation_1">Create a simulation job</a>
+      <li> <a href="#tutorial_create_simulation_2">Set inlet and outlet boundary conditions</a>
+      <li> <a href="#tutorial_create_simulation_3">Confirm wall properties and set solver parameters</a>
+      <li> <a href="#tutorial_create_simulation_4">Create the input files and run the simulation</a>
+      <li> <a href="#tutorial_create_simulation_5">Inspect the result in ParaView</a>
     </ol>
 
 </ol> -->
 
 <br>
 The <a href="https://simtk.org/frs/download_confirm.php/file/7094/New%20Tutorial%20Project.zip?group_id=930"> SimVascular Tutorial Project </a>
-is a complete SimVascular project containing the data created by each of these steps. It also includes a <i>OSMSC0110-aorta</i> directory 
+is a complete SimVascular project containing the data created by each of these steps. It also includes an <i>OSMSC0110-aorta</i> directory
 containing DICOM image data used in the tutorial.

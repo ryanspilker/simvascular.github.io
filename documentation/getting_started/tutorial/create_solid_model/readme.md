@@ -80,7 +80,7 @@ Create an instance of a <i>Models Tool</i> named <b>aorta-iliacs</b> used to cre
 
   <tr>
     <td><img src="/documentation/getting_started/tutorial/images/create-model-5.png" width="512" height="360"> </td>
-    <td> Close the <i>SV 2D Segmentation Panel</i> by selecting the <b>X</b> in its <i>Tab</i>. 
+    <td> Close the <i>SV 2D Segmentation Panel</i> by selecting the <b>&times;</b> on its tab.
          <br><br>
          Double-click on the <i>Data Manager</i> <b>Models / aorta-iliacs</b> <i>Data Node</i> with the left mouse
          button to bring up the <i>SV Modeling Panel</i>. 
