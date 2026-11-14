@@ -10,5 +10,5 @@ h1,h2,h3{color:#033651}a{color:#0d75ac}a:hover{color:#a62224}
 .brand-header nav a:hover,.brand-header nav a[aria-current]{border-color:#d42d34}
 .layout{max-width:1040px}.search-box{border-top:3px solid #0d75ac}.source-outline a{font-family:Montserrat,Arial,sans-serif;font-size:.9rem}
 .complete-outline>summary{font-family:Montserrat,Arial,sans-serif;font-weight:600;color:#033651;overflow-wrap:anywhere}
-html[data-review-theme="dark"] :is(h1,h2,h3,.complete-outline>summary){color:#e4edf4}
+:root{color-scheme:only light}
 @media(max-width:700px){.brand-header{padding:16px 20px;gap:12px}.brand-header nav{width:100%;margin-left:0;gap:8px 18px}.layout{padding:24px 18px 56px}.source-outline{padding-left:18px!important}}

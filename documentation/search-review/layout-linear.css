@@ -1,6 +1,5 @@
 /* Layout exploration: one reading column; shared authored sources and search unchanged. */
 :root{--linear-rule:#d4dfe7;--linear-muted:#536a79;--linear-panel:#f4f7f9}
-html[data-review-theme="dark"]{--linear-rule:#39515f;--linear-muted:#adc1ce;--linear-panel:#182631}
 body{font-family:Arial,Helvetica,sans-serif;line-height:1.65}
 .brand-header{max-width:none;padding:20px max(24px,calc((100vw - 920px)/2));gap:22px}
 .layout{display:block;max-width:920px;margin:0 auto;padding:36px 32px 72px}
