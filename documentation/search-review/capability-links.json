@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "kind": "navigation_links_only_not_search_index_membership",
+  "search_scope": "126-source pilot unchanged; no external excerpt or GUI coverage",
+  "links": [
+    {
+      "id": "svMorph",
+      "title": "svMorph",
+      "purpose": "Edit vascular geometry",
+      "href": "https://github.com/SimVascular/svMorph#readme",
+      "destination": "Project README: installation and workflows",
+      "description": "Tools for modifying patient-specific vascular surface geometry.",
+      "source": "https://github.com/SimVascular/svMorph/blob/main/README.md",
+      "git_blob_sha": "ddbb9550af92a774ae635bfd450df2479596da3b",
+      "status": "active",
+      "package_name": "svMorph",
+      "inspection_status": "README inspected; software not run",
+      "provenance": {
+        "source": "https://github.com/SimVascular/svMorph/blob/main/README.md",
+        "git_blob_sha": "ddbb9550af92a774ae635bfd450df2479596da3b",
+        "checked_utc": "2026-10-30T17:47:52Z"
+      }
+    },
+    {
+      "id": "svVascularize",
+      "title": "svVascularize",
+      "purpose": "Generate branching vascular networks",
+      "href": "https://simvascular.github.io/svVascularize/",
+      "destination": "Project documentation website",
+      "description": "Tools for generating vascular networks and preparing hemodynamic simulations.",
+      "source": "https://github.com/SimVascular/svVascularize/blob/main/README.md",
+      "git_blob_sha": "7896152d587b49cf2dd1ac2d1af3c5a6e6a51787",
+      "status": "active",
+      "package_name": "svVascularize",
+      "inspection_status": "README and landing page inspected; software not run",
+      "provenance": {
+        "source": "https://github.com/SimVascular/svVascularize/blob/main/README.md",
+        "git_blob_sha": "7896152d587b49cf2dd1ac2d1af3c5a6e6a51787",
+        "checked_utc": "2026-10-30T17:47:52Z"
+      }
+    },
+    {
+      "id": "svGrowth",
+      "title": "svGrowth",
+      "purpose": "Model tissue growth and remodeling (early development)",
+      "href": "https://github.com/StanfordCBCL/svGrowth#readme",
+      "destination": "Project README and development documentation",
+      "description": "A framework for biological tissue growth and remodeling. A completed user guide is not yet available.",
+      "source": "https://github.com/StanfordCBCL/svGrowth/blob/main/README.md",
+      "git_blob_sha": "a0ec68bfccf925373e1ee7044fde308c1158bfe5",
+      "status": "active",
+      "package_name": "svGrowth",
+      "inspection_status": "README inspected; not a completed user guide; software not run",
+      "provenance": {
+        "source": "https://github.com/StanfordCBCL/svGrowth/blob/main/README.md",
+        "git_blob_sha": "a0ec68bfccf925373e1ee7044fde308c1158bfe5",
+        "checked_utc": "2026-10-30T17:47:52Z"
+      }
+    },
+    {
+      "id": "svOneDSolver",
+      "package_name": "svOneDSolver",
+      "title": "svOneDSolver",
+      "purpose": "Simulate flow in a 1D vascular network",
+      "description": "1D vascular-network solver.",
+      "destination": "Project README",
+      "href": "https://github.com/SimVascular/svOneDSolver#readme",
+      "status": "active",
+      "inspection_status": "README inspected; software not run",
+      "provenance": {
+        "source": "https://github.com/SimVascular/svOneDSolver/blob/master/README.md",
+        "git_blob_sha": "9ba51ac90eda3d32b3893c015280c371b2c27480",
+        "checked_utc": "2026-10-30T17:47:52Z",
+        "basis": "svOneDSolver master README first70lines retrieved; Gitblob9ba51ac90eda3d32b3893c015280c371b2c27480; software not run"
+      }
+    }
+  ]
+}

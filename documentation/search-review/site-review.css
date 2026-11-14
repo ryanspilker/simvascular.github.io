@@ -1,0 +1,14 @@
+/* Site conventions: Lora body, Montserrat headings, official blue/red palette. */
+#search-results p{overflow-wrap:anywhere;word-break:normal}
+body{font-family:Lora,Georgia,serif;color:#16161d;background:#fff}
+h1,h2,h3,summary,.brand-header,button,input,select,label{font-family:Montserrat,"Helvetica Neue",Arial,sans-serif}
+h1,h2,h3{color:#033651}a{color:#0d75ac}a:hover{color:#a62224}
+.brand-header{display:flex;flex-wrap:wrap;align-items:center;background:#16161d!important;color:#e6ebee!important;border-bottom:4px solid #0d75ac;padding:18px max(24px,calc((100vw - 1080px)/2))}
+.brand-header img{background:#fff;padding:5px;border-radius:3px;box-sizing:content-box;max-width:180px;height:auto}
+.brand-header nav{display:flex;flex-wrap:wrap;gap:12px 22px;margin-left:auto;font-size:.8rem}
+.brand-header nav a{color:#e6ebee;text-decoration:none;border-bottom:2px solid transparent;padding:8px 0}
+.brand-header nav a:hover,.brand-header nav a[aria-current]{border-color:#d42d34}
+.layout{max-width:1040px}.search-box{border-top:3px solid #0d75ac}.source-outline a{font-family:Montserrat,Arial,sans-serif;font-size:.9rem}
+.complete-outline>summary{font-family:Montserrat,Arial,sans-serif;font-weight:600;color:#033651;overflow-wrap:anywhere}
+html[data-review-theme="dark"] :is(h1,h2,h3,.complete-outline>summary){color:#e4edf4}
+@media(max-width:700px){.brand-header{padding:16px 20px;gap:12px}.brand-header nav{width:100%;margin-left:0;gap:8px 18px}.layout{padding:24px 18px 56px}.source-outline{padding-left:18px!important}}

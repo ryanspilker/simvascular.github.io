@@ -1,0 +1,251 @@
+{
+  "status": "isolated canonical-link candidate; unpublished",
+  "source_commit": "45905599ca479fc90bccd1a8569a5ee3a0a989c7",
+  "documents": 299,
+  "source_mode": "pinned_published_capture",
+  "capture_binding": "Published records match retained commit/path/SHA-256 manifest; hash binding is not independent authenticity certification",
+  "records": 1137,
+  "focused_reader_pages": 0,
+  "backend_required": false,
+  "machine_readable_catalog": "source-catalog.json;299versionedMarkdown/sourceprovenance records",
+  "external_requests_by_search": "none; source destination opens only when reader selects it",
+  "destination_precision": {
+    "source_container": 809,
+    "authored_section": 271,
+    "authored_parent_section": 57
+  },
+  "literal_lookup_adapter": "Unknown literal XML-like identifiers are distinguished from exact matches; any related authored text is explicitly labelled",
+  "token_records_still_lacking_exact_existing_anchor": 104,
+  "task_metadata": {
+    "status": "Proposed editorial navigation metadata, developer-visible evaluation; not changes to authored scientific prose",
+    "entries": [
+      {
+        "source_id": "DOC137",
+        "key": "DOC137:overview",
+        "label": "Prepare input files for a finite-element simulation",
+        "scope": "svMultiPhysics: mesh, boundary data, initial conditions and solver XML",
+        "support": "Opening paragraph and authored preparation list in Running svMultiPhysics; no claim about package runnability.",
+        "source_sha256": "a0f8958c4f4dbd3ad7fe0ae73aab2964ecbb489095102654ce6e64df270bb418"
+      },
+      {
+        "source_id": "DOC176",
+        "key": "DOC176:overview",
+        "label": "Specify flow samples and Fourier modes in an inlet file",
+        "scope": "svMultiPhysics: prescribed time-flow waveform",
+        "support": "Authored .flow header/time-flow explanation and Add_BC example; does not change smoothing policy.",
+        "source_sha256": "7045a7d1f824d81a38dee3bdd78c7a0c9873d4dd4b5f4c74aa6b56b08814d377"
+      }
+    ],
+    "boundary": "These labels describe existing authored sections. No query-specific source-ID routing or rank weights. Both motivating query classes are developer-visible; success is development evidence only."
+  },
+  "navigation_link_conversions": [
+    {
+      "from": "read/DOC058.html#doc-DOC058",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#installing",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC059.html#doc-DOC059",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#getting_started",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC072.html#doc-DOC072",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#tutorial",
+      "precision": "source_container"
+    },
+    {
+      "from": "example-1.html#doc-DOC163",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_example_1_intro",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC100.html#doc-DOC100",
+      "to": "https://simvascular.github.io/documentation/modeling.html#modelingIntro",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC105.html#doc-DOC105",
+      "to": "https://simvascular.github.io/documentation/modeling.html#modelingPathPlanning",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC107.html#doc-DOC107",
+      "to": "https://simvascular.github.io/documentation/modeling.html#modelingSegmentation",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC252.html#doc-DOC252",
+      "to": "https://simvascular.github.io/documentation/simcardio.html#automatic-cardiac-modeling",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC077.html#doc-DOC077",
+      "to": "https://simvascular.github.io/documentation/meshing.html#introduction",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC070.html#doc-DOC070",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#tutorial_create_simulation",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC138.html#doc-DOC138",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#boundary_condition_parameters",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC142.html#doc-DOC142",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#general_parameters",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC070.html#tutorial_create_simulation_4",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#tutorial_create_simulation_4",
+      "precision": "authored_section"
+    },
+    {
+      "from": "read/DOC070.html#tutorial_create_simulation_5",
+      "to": "https://simvascular.github.io/documentation/getting_started.html#tutorial_create_simulation_5",
+      "precision": "authored_section"
+    },
+    {
+      "from": "read/DOC137.html#doc-DOC137",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#running-simulation",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC168.html#doc-DOC168",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_runtime",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC169.html#doc-DOC169",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_sim_outputs",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC175.html#doc-DOC175",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_example_2_sim_outputs",
+      "precision": "source_container"
+    },
+    {
+      "from": "example-1.html#doc-DOC163",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_example_1_intro",
+      "precision": "source_container"
+    },
+    {
+      "from": "example-2.html#doc-DOC171",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#cfd_ug_example_2_intro",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC183.html#doc-DOC183",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#user_guide_non_newtonian_flow",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC181.html#doc-DOC181",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#user_guide_fluid_solid_interaction",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC283.html#doc-DOC283",
+      "to": "https://simvascular.github.io/documentation/simcardio.html#mechanics-modeling",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC269.html#doc-DOC269",
+      "to": "https://simvascular.github.io/documentation/simcardio.html#cep-modeling",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC133.html#doc-DOC133",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#modeling_capabilities",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC190.html#doc-DOC190",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#user_guide_nonlinear_solid_dynamics",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC186.html#doc-DOC186",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#user_guide_material_models",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC226.html#doc-DOC226",
+      "to": "https://simvascular.github.io/documentation/rom_simulation.html#0d-solver",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC232.html#doc-DOC232",
+      "to": "https://simvascular.github.io/documentation/rom_simulation.html#0d-solver-user-guide",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC250.html#doc-DOC250",
+      "to": "https://simvascular.github.io/documentation/rom_simulation.html#tool-tutorial",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC221.html#doc-DOC221",
+      "to": "https://simvascular.github.io/documentation/rom_simulation.html#0d-solver-calibrator",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC017.html#doc-DOC017",
+      "to": "https://simvascular.github.io/clinical/coronary.html#introduction",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC005.html#doc-DOC005",
+      "to": "https://simvascular.github.io/clinical/aortofemoral1.html#sec1",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC010.html#doc-DOC010",
+      "to": "https://simvascular.github.io/clinical/aortofemoral2.html#sec1",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC028.html#doc-DOC028",
+      "to": "https://simvascular.github.io/clinical/pulmonary.html#sec1",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC142.html#doc-DOC142",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#general_parameters",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC143.html#doc-DOC143",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#liner_solver_subsection",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC158.html#doc-DOC158",
+      "to": "https://simvascular.github.io/documentation/multi_physics.html#theory",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC210.html#doc-DOC210",
+      "to": "https://simvascular.github.io/documentation/python_interface.html#sv_modules",
+      "precision": "source_container"
+    },
+    {
+      "from": "read/DOC213.html#doc-DOC213",
+      "to": "https://simvascular.github.io/documentation/references.html#refSec7",
+      "precision": "source_container"
+    }
+  ],
+  "source_index_sha256": "a820b9374589c2051697c4ad281799a06bbe97917ded4f0a064237204dba4fb8",
+  "limits": [
+    "Source excerpts are dated, not latest software guarantees",
+    "Canonical mapping verified against frozen authored/wrapper evidence; not all live links checked",
+    "Broader source-container links cannot be described as exact setting links",
+    "Existing retrieval known misses retained pending measured candidate",
+    "Production capture/build integration and normal PR review still required"
+  ]
+}

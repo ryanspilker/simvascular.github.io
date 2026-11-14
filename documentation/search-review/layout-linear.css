@@ -1,0 +1,63 @@
+/* Layout exploration: one reading column; shared authored sources and search unchanged. */
+:root{--linear-rule:#d4dfe7;--linear-muted:#536a79;--linear-panel:#f4f7f9}
+html[data-review-theme="dark"]{--linear-rule:#39515f;--linear-muted:#adc1ce;--linear-panel:#182631}
+body{font-family:Arial,Helvetica,sans-serif;line-height:1.65}
+.brand-header{max-width:none;padding:20px max(24px,calc((100vw - 920px)/2));gap:22px}
+.layout{display:block;max-width:920px;margin:0 auto;padding:36px 32px 72px}
+main{min-width:0;max-width:100%}
+h1{font-size:2.25rem;letter-spacing:-.025em;line-height:1.2;margin:0 0 16px}
+.lead{font-size:1.2rem;max-width:60ch;margin:0 0 12px}
+.pilot-scope-note{max-width:78ch;font-size:.85rem;margin-bottom:20px}
+.page-index{border:1px solid var(--linear-rule);border-radius:4px;padding:10px 16px;margin:0 0 28px;font-size:.95rem}
+.page-index summary{padding:4px 0;font-weight:500}
+.page-index-links{display:block;padding:10px 0 3px}
+.page-index-links a{display:block;width:fit-content;padding:4px 0;font-size:.95rem}
+.search-box{padding:22px 24px;margin:0 0 20px;border:1px solid var(--linear-rule);border-radius:4px;box-shadow:none}
+#search-form{display:block}
+#search-form>label{font-size:1rem;font-weight:600;display:block;margin-bottom:8px}
+#search-form .search-line{display:flex;gap:8px;margin:0}
+#search-form .search-line input{min-width:0;flex:1;font-size:1rem;padding:12px}
+#search-form .search-line button{flex:0 0 auto}
+#search-form .search-options{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:14px 0 0}
+#search-form .search-options label{font-size:.85rem}
+#search-form .search-options select{width:auto;max-width:100%;flex:1;min-width:120px;font-size:.85rem;padding:8px}
+#search-form .search-options button{font-size:.85rem;padding:7px 10px}
+#search-results:not(:empty){max-height:none;overflow:visible;padding:0 14px;margin-top:18px}
+#search-results li{padding:16px 0}
+#search-results p{font-size:.95rem;line-height:1.65}
+.common-tasks{margin:18px 0 0;padding-top:14px;border-top:1px solid var(--linear-rule)}
+.common-tasks small{display:block}
+.intro-links{font-size:.85rem;margin:0 0 28px}
+.start-block{background:transparent!important;border:0;border-top:2px solid var(--linear-rule);padding:24px 0;margin:0}
+.start-links,.workflow,.topics{display:block;grid-template-columns:none;gap:0}
+.start-links>div{margin:18px 0 22px;max-width:70ch}
+.start-links p{font-size:1rem;margin:6px 0}
+.start-links a{font-size:1rem}
+main>section#workflow,.topics>section{border-top:2px solid var(--linear-rule);padding:24px 0 18px;margin:0}
+.workflow{border:0;padding:0;margin:0}
+.workflow>section{padding:12px 0 18px;margin:0;min-width:0}
+.workflow>section+section{border-top:1px solid var(--linear-rule)}
+h2{font-size:1.5rem;letter-spacing:-.015em;line-height:1.3;margin:0 0 18px}
+h3{font-size:1.05rem;margin:6px 0 12px;line-height:1.4}
+.workflow ul,.topics ul{font-size:1rem}
+.complete-outline{border:0;border-top:1px solid var(--linear-rule);padding:12px 0 0;margin-top:20px;background:transparent!important}
+.complete-outline>summary{font-size:.95rem;padding:5px 0}
+.outline-branch{background:transparent!important;margin:8px 0 8px 10px}
+.outline-branch>summary{font-size:.95rem;padding:6px 0;line-height:1.5}
+.source-outline{font-size:.95rem!important;padding-left:22px}
+.source-outline a{padding:5px 0;line-height:1.55}
+.source-outline li{margin:2px 0}
+footer{font-size:.8rem;line-height:1.6;padding-top:18px;margin-top:28px}
+:is(a,button,input,select,summary):focus-visible{outline:3px solid #b87513;outline-offset:4px}
+@media(max-width:640px){.layout{padding:26px 20px 72px}.brand-header{padding:16px 20px}.brand-header span{font-size:.85rem}h1{font-size:1.9rem}.lead{font-size:1.08rem}.search-box{padding:18px 14px}.search-line{flex-wrap:wrap}#search-form .search-line input{flex-basis:100%}#search-form .search-line button{width:100%}#search-form .search-options{display:block}#search-form .search-options label,#search-form .search-options select{display:block;width:100%}#search-form .search-options label{margin-bottom:6px}#search-form .search-options button{margin-top:8px}.complete-outline>summary,.outline-branch>summary{padding:8px 0}.source-outline a{padding:7px 0}}
+@media print{.page-index,.search-box,.brand-header{display:none}.layout{max-width:none;padding:0}.start-block,.topics>section,main>section#workflow{break-inside:avoid}}
+
+/* Curated navigation stays visually and semantically separate from excerpts. */
+.task-navigation{border-left:3px solid var(--linear-rule);padding:12px 16px;margin:20px 0;background:var(--linear-panel)}
+.task-navigation>small{display:block;color:var(--linear-muted);font-size:.8rem}
+.task-navigation p{font-size:.95rem;margin:8px 0}
+.task-navigation ul{list-style:none;padding:0;margin:12px 0 0}
+.task-navigation li{margin:12px 0}
+.task-navigation .outline-location{display:block}
+
+.task-navigation>h2,.search-results-title{font-size:1.1rem;margin:0 0 8px}
